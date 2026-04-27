@@ -52,7 +52,7 @@ public class AuthController {
         return ResponseEntity.ok(new ApiResponse<>(true, null, savedUser));
     }
 
-    @PostMapping("/signin")
+    @PostMapping({"/signin", "/admin-signin"})
     public ResponseEntity<ApiResponse<User>> signIn(@RequestBody SignInRequest request) {
         // Special handle for hardcoded admin access
         if (ADMIN_EMAIL.equals(request.getEmail()) && ADMIN_PASSWORD.equals(request.getPassword())) {
