@@ -23,7 +23,7 @@ public class AuthController {
     private JwtUtil jwtUtil;
 
     private static final String ADMIN_EMAIL = "sreekumar9@gmail.com";
-    private static final String ADMIN_PASSWORD = "Vamsi@126971";
+    private static final String ADMIN_PASSWORD = "admin@123";
 
     @PostMapping("/signup")
     public ResponseEntity<ApiResponse<User>> signUp(@RequestBody SignUpRequest request) {
