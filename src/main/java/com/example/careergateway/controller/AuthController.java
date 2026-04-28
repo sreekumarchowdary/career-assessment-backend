@@ -22,7 +22,7 @@ public class AuthController {
     @Autowired
     private JwtUtil jwtUtil;
 
-    private static final String ADMIN_EMAIL = "sreekumar9@gmail.com";
+    private static final String ADMIN_EMAIL = "admin@gmail.com";
     private static final String ADMIN_PASSWORD = "admin@123";
 
     @PostMapping("/signup")
